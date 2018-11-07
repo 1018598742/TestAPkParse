@@ -72,6 +72,8 @@ public class ApkUtils {
     }
 
     /**
+     * 解压缩之前的方法不能解压支付宝apk；下了个qq的apk发现它的rsa文件名不一致但后缀还是.RSA
+     *
      * @param apkPath apk的绝对路径
      * @return
      */
@@ -90,7 +92,7 @@ public class ApkUtils {
                 while (files.hasMoreElements()) {
                     entry = files.nextElement();
                     String entryName = entry.getName();
-                    if (!entryName.contains("CERT.RSA")) {
+                    if (!entryName.toUpperCase().contains(".RSA")) {
                         continue;
                     }
                     System.out.println(entryName);
