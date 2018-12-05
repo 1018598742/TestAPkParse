@@ -9,5 +9,8 @@
 ```
 
 #### 注意：
+有的 apk 的 RSA 文件名并不是 CERT.RSA(使用爱加密加固后的apk为APP_KEYS.RSA)
 
-有的 apk 的 RSA 文件名并不是 CERT.RSA
+## 获取应用包名
+
+- 位置 aboutapk 包下
