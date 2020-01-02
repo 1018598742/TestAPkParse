@@ -65,14 +65,14 @@ public class ApkIconUtil {
      */
     public static void main(String[] args) {
         try {
-            String apkPath = "D:\\Java\\idea_app\\ReadApkAndIpa1\\src\\main\\java\\shenmiaotaowang_966.apk";
+            String apkPath = "D:\\tempAPk\\alipay_wap_main.apk";
            /* if (args.length > 0) {
                 apkPath = args[0];
             }*/
             ApkInfo apkInfo = new ApkUtil().getApkInfo(apkPath);
             System.out.println(apkInfo);
-            long now = System.currentTimeMillis();
-            extractFileFromApk(apkPath, apkInfo.getApplicationIcon(), "D:\\image\\apkIcon" + now + ".png");
+//            long now = System.currentTimeMillis();
+//            extractFileFromApk(apkPath, apkInfo.getApplicationIcon(), "D:\\image\\apkIcon" + now + ".png");
         } catch (Exception e) {
             e.printStackTrace();
         }

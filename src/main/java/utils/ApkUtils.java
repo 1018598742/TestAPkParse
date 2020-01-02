@@ -145,7 +145,7 @@ public class ApkUtils {
             //直到读完为止
             int i = 0;
             while ((line = br.readLine()) != null) {
-//                    System.out.println("每一行的数据：" + line);
+                    System.out.println("每一行的数据：" + line);
                 if (line.contains("SHA1:")) {
                     apkSHA1 = line.substring("SHA1: ".length() + 1);
                     break;

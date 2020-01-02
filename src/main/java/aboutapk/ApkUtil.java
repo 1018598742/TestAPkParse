@@ -31,7 +31,7 @@ public class ApkUtil {
      */
     //windows环境下直接指向appt.exe
     //比如你可以放在src下
-    private String mAaptPath = "C:\\Users\\fta\\AppData\\Local\\Android\\Sdk\\build-tools\\28.0.3\\aapt";
+    private String mAaptPath = "E:\\AndroidSdk\\Sdk\\build-tools\\29.0.1\\aapt";
     //linux下
     //private String mAaptPath = "/usr/local/apktool/aapt";
 
@@ -168,7 +168,8 @@ public class ApkUtil {
 
     public static void main(String[] args) {
         try {
-            String demo = "C:\\Users\\fta\\Desktop\\tempapk\\ysf.apk";
+//            String demo = "C:\\Users\\fta\\Desktop\\tempapk\\ysf.apk";
+            String demo = "E:\\AndroidStdioWorkplace\\CompanWork\\MdmOnline5.0\\MdmOnline5.0JiLi\\app\\build\\outputs\\apk\\jlqc_onlinemdm_rtl\\debug\\jlqc_onlinemdm_rtlv3.0.1.11_19123103.apk";
 //            String demo = "C:\\Users\\fta\\Desktop\\tempapk\\camera.apk";
             ApkInfo apkInfo = new ApkUtil().getApkInfo(demo);
             System.out.println(apkInfo);
